@@ -8,5 +8,4 @@ RUN apk update \
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 
-USER default
 CMD ["bin/sh"]
