@@ -5,5 +5,8 @@ apk update \
   && mix local.rebar --force \
   && mix local.hex --force
 
+mkdir -p /opt/app
+WORKDIR /opt/app
+
 USER default
 CMD ["bin/sh"]
